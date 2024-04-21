@@ -5,82 +5,81 @@
     padding: 0;
 }
 
-body, h1, p, ul, li, footer {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f0f2f5;
-    color: #333;
-}
-
-header {
-    background: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1323315116.1713702342&semt=ais') no-repeat center center/cover;
-    height: 100vh;
+    background-color: #fff;
+    color: #000;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    flex: 1;
     text-align: center;
-    color: white;
 }
 
-.header-content h1 {
-    font-size: 4rem;
-    font-weight: bold;
+header h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
-.header-content p {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    opacity: 0.9;
-}
-
-nav {
-    background-color: #333;
-    text-align: center;
-    padding: 20px 0;
+header p {
+    font-size: 24px;
+    color: #666;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    padding: 20px 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
+    font-size: 18px;
 }
 
 nav ul li a {
-    color: white;
+    color: #000;
     text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #555;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
-    color: white;
+    margin-top: auto;
+    background-color: #f0f0f0;
+    width: 100%;
 }
 
 footer p {
-    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
-    header .header-content h1 {
-        font-size: 2.5rem;
+    header h1 {
+        font-size: 40px;
     }
 
-    header .header-content p {
-        font-size: 1rem;
+    header p {
+        font-size: 20px;
     }
 
-    nav ul li a {
-        font-size: 1rem;
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 }

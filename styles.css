@@ -66,6 +66,18 @@ section {
     border-radius: 8px;
 }
 
+header p, section p {
+    color: #626567;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Consistency in design */
+}
+
 footer {
     text-align: center;
     padding: 20px 0;
@@ -79,14 +91,14 @@ footer p {
     padding: 0;
 }
 
-a {
-    color: #0077cc;
-    transition: color 0.3s;
+footer a {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
 }
 
-a:hover {
+footer a:hover {
+    color: #ffa500;
     text-decoration: none;
-    color: #0056b3;
 }
 
 /* Media Queries for Responsive Adjustments */

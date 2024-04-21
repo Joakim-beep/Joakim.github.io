@@ -5,20 +5,19 @@
     padding: 0;
 }
 
-body, h1, p, ul, li, footer {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f0f2f5;
-    color: #333;
+    color: #000; /* Black text color for overall body text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 40px;
 }
 
 header {
-    background: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1323315116.1713702342&semt=ais') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -28,13 +27,15 @@ header {
 }
 
 .header-content h1 {
-    font-size: 4rem;
+    font-size: 60px;
     font-weight: bold;
+    color: #000; /* Black text color for main header */
 }
 
 .header-content p {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-top: 20px;
+    color: #000; /* Black text color for header paragraph */
     opacity: 0.9;
 }
 
@@ -45,42 +46,64 @@ nav {
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    padding: 20px 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
+    font-size: 18px;
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* White text color for navigation links */
     text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #555; /* Dark gray for navigation links on hover */
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
+    margin-top: auto;
     background-color: #333;
-    color: white;
+    color: white; /* White text color for footer */
 }
 
 footer p {
-    margin: 0;
+    font-size: 16px;
+    color: #000; /* Black text color for footer text */
+}
+
+footer a {
+    color: white; /* White text color for footer links */
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
     header .header-content h1 {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
 
     header .header-content p {
-        font-size: 1rem;
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
     }
 
     nav ul li a {
-        font-size: 1rem;
+        display: inline-block;
+    }
+
+    body {
+        padding: 10px;
     }
 }

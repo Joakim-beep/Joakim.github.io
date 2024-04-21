@@ -23,19 +23,19 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: #fff; /* White text color for header */
 }
 
 .header-content h1 {
     font-size: 60px;
     font-weight: bold;
-    color: #000; /* Black text color for main header */
+    color: #fff; /* White text color for main header */
 }
 
 .header-content p {
     font-size: 24px;
     margin-top: 20px;
-    color: #000; /* Black text color for header paragraph */
+    color: #fff; /* White text color for header paragraph */
     opacity: 0.9;
 }
 
@@ -57,7 +57,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* White text color for navigation links */
+    color: #fff; /* White text color for navigation links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -71,16 +71,16 @@ footer {
     padding: 20px 0;
     margin-top: auto;
     background-color: #333;
-    color: white; /* White text color for footer */
+    color: #fff; /* White text color for footer */
 }
 
 footer p {
     font-size: 16px;
-    color: #000; /* Black text color for footer text */
+    color: #fff; /* White text color for footer text */
 }
 
 footer a {
-    color: white; /* White text color for footer links */
+    color: #fff; /* White text color for footer links */
     text-decoration: none;
 }
 
